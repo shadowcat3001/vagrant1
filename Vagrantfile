@@ -71,4 +71,10 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+  config.vm.provision 'puppet' do |puppet|
+    puppet.manifests_path = 'manifests'
+	puppet.manifest_file = 'site.pp'
+	puppet.module_path = 'modules'
+	puppet.options = '--verbose'
+  end
 end
