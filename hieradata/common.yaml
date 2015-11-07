@@ -1,0 +1,5 @@
+---
+accounts::users:
+  potts:
+    comment: 'Graeme Potts'
+    shell: "/bin/bash"
