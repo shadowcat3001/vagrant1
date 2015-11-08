@@ -3,3 +3,7 @@ accounts::users:
   potts:
     comment: 'Graeme Potts'
     shell: "/bin/bash"
+rvm::system_rubies:
+  '2.2.1': {}
+rvm::system_users:
+  - potts
